@@ -17,6 +17,19 @@
 		0911FF4B2202523D00A41319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0911FF492202523D00A41319 /* LaunchScreen.storyboard */; };
 		0911FF562202523D00A41319 /* TreasureBoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0911FF552202523D00A41319 /* TreasureBoundTests.swift */; };
 		0911FF612202523D00A41319 /* TreasureBoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0911FF602202523D00A41319 /* TreasureBoundUITests.swift */; };
+		82FC191A2214BAEA0077B92D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82FC19192214BAEA0077B92D /* GoogleService-Info.plist */; };
+		82FC191B2214BB0E0077B92D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82FC19192214BAEA0077B92D /* GoogleService-Info.plist */; };
+		82FC191C2214BB0F0077B92D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82FC19192214BAEA0077B92D /* GoogleService-Info.plist */; };
+		82FC19262214BDCD0077B92D /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC191E2214BDCD0077B92D /* FirebaseCore.framework */; };
+		82FC19272214BDCD0077B92D /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC191F2214BDCD0077B92D /* nanopb.framework */; };
+		82FC19282214BDCD0077B92D /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC19202214BDCD0077B92D /* FirebaseCoreDiagnostics.framework */; };
+		82FC19292214BDCD0077B92D /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC19212214BDCD0077B92D /* GoogleUtilities.framework */; };
+		82FC192A2214BDCD0077B92D /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC19222214BDCD0077B92D /* FirebaseInstanceID.framework */; };
+		82FC192B2214BDCD0077B92D /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC19232214BDCD0077B92D /* FirebaseAnalytics.framework */; };
+		82FC192C2214BDCD0077B92D /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC19242214BDCD0077B92D /* GoogleAppMeasurement.framework */; };
+		82FC192D2214BDCD0077B92D /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC19252214BDCD0077B92D /* FIRAnalyticsConnector.framework */; };
+		82FC19372214C79E0077B92D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC19362214C79E0077B92D /* libsqlite3.tbd */; };
+		82FC19392214C7B10077B92D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC19382214C7B10077B92D /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +66,20 @@
 		0911FF5C2202523D00A41319 /* TreasureBoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureBoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0911FF602202523D00A41319 /* TreasureBoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureBoundUITests.swift; sourceTree = "<group>"; };
 		0911FF622202523D00A41319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82FC19192214BAEA0077B92D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		82FC191E2214BDCD0077B92D /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		82FC191F2214BDCD0077B92D /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		82FC19202214BDCD0077B92D /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		82FC19212214BDCD0077B92D /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		82FC19222214BDCD0077B92D /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		82FC19232214BDCD0077B92D /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		82FC19242214BDCD0077B92D /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		82FC19252214BDCD0077B92D /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
+		82FC192E2214BE550077B92D /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
+		82FC192F2214BE550077B92D /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
+		82FC19342214C7350077B92D /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = ../../Firebase.h; sourceTree = "<group>"; };
+		82FC19362214C79E0077B92D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		82FC19382214C7B10077B92D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +87,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FC19392214C7B10077B92D /* StoreKit.framework in Frameworks */,
+				82FC19372214C79E0077B92D /* libsqlite3.tbd in Frameworks */,
+				82FC19282214BDCD0077B92D /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				82FC19272214BDCD0077B92D /* nanopb.framework in Frameworks */,
+				82FC192B2214BDCD0077B92D /* FirebaseAnalytics.framework in Frameworks */,
+				82FC192A2214BDCD0077B92D /* FirebaseInstanceID.framework in Frameworks */,
+				82FC192C2214BDCD0077B92D /* GoogleAppMeasurement.framework in Frameworks */,
+				82FC19292214BDCD0077B92D /* GoogleUtilities.framework in Frameworks */,
+				82FC19262214BDCD0077B92D /* FirebaseCore.framework in Frameworks */,
+				82FC192D2214BDCD0077B92D /* FIRAnalyticsConnector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,10 +120,12 @@
 		0911FF2E2202523D00A41319 = {
 			isa = PBXGroup;
 			children = (
+				82FC191D2214BCC30077B92D /* FirebaseSDK */,
 				0911FF392202523D00A41319 /* TreasureBound */,
 				0911FF542202523D00A41319 /* TreasureBoundTests */,
 				0911FF5F2202523D00A41319 /* TreasureBoundUITests */,
 				0911FF382202523D00A41319 /* Products */,
+				82FC19352214C79E0077B92D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +142,13 @@
 		0911FF392202523D00A41319 /* TreasureBound */ = {
 			isa = PBXGroup;
 			children = (
+				82FC19342214C7350077B92D /* Firebase.h */,
 				0911FF3A2202523D00A41319 /* AppDelegate.swift */,
 				0911FF3C2202523D00A41319 /* GameScene.sks */,
 				0911FF3E2202523D00A41319 /* Actions.sks */,
 				0911FF402202523D00A41319 /* GameScene.swift */,
 				0911FF422202523D00A41319 /* GameViewController.swift */,
+				82FC19192214BAEA0077B92D /* GoogleService-Info.plist */,
 				0911FF442202523D00A41319 /* Main.storyboard */,
 				0911FF472202523D00A41319 /* Assets.xcassets */,
 				0911FF492202523D00A41319 /* LaunchScreen.storyboard */,
@@ -132,6 +173,32 @@
 				0911FF622202523D00A41319 /* Info.plist */,
 			);
 			path = TreasureBoundUITests;
+			sourceTree = "<group>";
+		};
+		82FC191D2214BCC30077B92D /* FirebaseSDK */ = {
+			isa = PBXGroup;
+			children = (
+				82FC192E2214BE550077B92D /* FirebaseDatabase.framework */,
+				82FC192F2214BE550077B92D /* leveldb-library.framework */,
+				82FC19252214BDCD0077B92D /* FIRAnalyticsConnector.framework */,
+				82FC19232214BDCD0077B92D /* FirebaseAnalytics.framework */,
+				82FC191E2214BDCD0077B92D /* FirebaseCore.framework */,
+				82FC19202214BDCD0077B92D /* FirebaseCoreDiagnostics.framework */,
+				82FC19222214BDCD0077B92D /* FirebaseInstanceID.framework */,
+				82FC19242214BDCD0077B92D /* GoogleAppMeasurement.framework */,
+				82FC19212214BDCD0077B92D /* GoogleUtilities.framework */,
+				82FC191F2214BDCD0077B92D /* nanopb.framework */,
+			);
+			path = FirebaseSDK;
+			sourceTree = "<group>";
+		};
+		82FC19352214C79E0077B92D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82FC19382214C7B10077B92D /* StoreKit.framework */,
+				82FC19362214C79E0077B92D /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +269,7 @@
 				TargetAttributes = {
 					0911FF362202523D00A41319 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					0911FF502202523D00A41319 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -246,6 +313,7 @@
 				0911FF482202523D00A41319 /* Assets.xcassets in Resources */,
 				0911FF4B2202523D00A41319 /* LaunchScreen.storyboard in Resources */,
 				0911FF3F2202523D00A41319 /* Actions.sks in Resources */,
+				82FC191A2214BAEA0077B92D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FC191B2214BB0E0077B92D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FC191C2214BB0F0077B92D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,11 +494,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FirebaseSDK",
+				);
 				INFOPLIST_FILE = TreasureBound/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = BrokeAssGames.TreasureBound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = /Users/n01097585/Documents/TreasureBound/TreasureBound/FirebaseSDK;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
 			};
 			name = Debug;
 		};
@@ -436,11 +516,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FirebaseSDK",
+				);
 				INFOPLIST_FILE = TreasureBound/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = BrokeAssGames.TreasureBound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = /Users/n01097585/Documents/TreasureBound/TreasureBound/FirebaseSDK;
 			};
 			name = Release;
 		};
@@ -517,6 +606,7 @@
 				0911FF672202523E00A41319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0911FF682202523E00A41319 /* Build configuration list for PBXNativeTarget "TreasureBoundTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +615,7 @@
 				0911FF6A2202523E00A41319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0911FF6B2202523E00A41319 /* Build configuration list for PBXNativeTarget "TreasureBoundUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +624,7 @@
 				0911FF6D2202523E00A41319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
