@@ -17,6 +17,7 @@
 		0993E4B82236ED0C00622DA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0993E4B62236ED0C00622DA0 /* LaunchScreen.storyboard */; };
 		0993E4C32236ED0C00622DA0 /* TreasureBoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993E4C22236ED0C00622DA0 /* TreasureBoundTests.swift */; };
 		0993E4CE2236ED0C00622DA0 /* TreasureBoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993E4CD2236ED0C00622DA0 /* TreasureBoundUITests.swift */; };
+		41B56B692236FBF700128293 /* Platformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B56B682236FBF700128293 /* Platformer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		0993E4C92236ED0C00622DA0 /* TreasureBoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureBoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0993E4CD2236ED0C00622DA0 /* TreasureBoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureBoundUITests.swift; sourceTree = "<group>"; };
 		0993E4CF2236ED0C00622DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B56B682236FBF700128293 /* Platformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platformer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				0993E4B42236ED0C00622DA0 /* Assets.xcassets */,
 				0993E4B62236ED0C00622DA0 /* LaunchScreen.storyboard */,
 				0993E4B92236ED0C00622DA0 /* Info.plist */,
+				41B56B682236FBF700128293 /* Platformer.swift */,
 			);
 			path = TreasureBound;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				0993E4AE2236ED0C00622DA0 /* GameScene.swift in Sources */,
 				0993E4B02236ED0C00622DA0 /* GameViewController.swift in Sources */,
 				0993E4A82236ED0C00622DA0 /* AppDelegate.swift in Sources */,
+				41B56B692236FBF700128293 /* Platformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +521,7 @@
 				0993E4D42236ED0C00622DA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0993E4D52236ED0C00622DA0 /* Build configuration list for PBXNativeTarget "TreasureBoundTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +530,7 @@
 				0993E4D72236ED0C00622DA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0993E4D82236ED0C00622DA0 /* Build configuration list for PBXNativeTarget "TreasureBoundUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +539,7 @@
 				0993E4DA2236ED0C00622DA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
