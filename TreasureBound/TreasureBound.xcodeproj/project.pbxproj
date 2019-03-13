@@ -18,6 +18,8 @@
 		0993E4C32236ED0C00622DA0 /* TreasureBoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993E4C22236ED0C00622DA0 /* TreasureBoundTests.swift */; };
 		0993E4CE2236ED0C00622DA0 /* TreasureBoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993E4CD2236ED0C00622DA0 /* TreasureBoundUITests.swift */; };
 		41B56B692236FBF700128293 /* Platformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B56B682236FBF700128293 /* Platformer.swift */; };
+		41B56BF522399DAA00128293 /* PlatformerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B56BF422399DAA00128293 /* PlatformerScene.swift */; };
+		41B56BF722399F4B00128293 /* PlatformerScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 41B56BF622399F4B00128293 /* PlatformerScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		0993E4CD2236ED0C00622DA0 /* TreasureBoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureBoundUITests.swift; sourceTree = "<group>"; };
 		0993E4CF2236ED0C00622DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41B56B682236FBF700128293 /* Platformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platformer.swift; sourceTree = "<group>"; };
+		41B56BF422399DAA00128293 /* PlatformerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformerScene.swift; sourceTree = "<group>"; };
+		41B56BF622399F4B00128293 /* PlatformerScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlatformerScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		0993E4A62236ED0C00622DA0 /* TreasureBound */ = {
 			isa = PBXGroup;
 			children = (
+				41B56BF82239A05300128293 /* Platformer */,
 				0993E4A72236ED0C00622DA0 /* AppDelegate.swift */,
 				0993E4A92236ED0C00622DA0 /* GameScene.sks */,
 				0993E4AB2236ED0C00622DA0 /* Actions.sks */,
@@ -114,7 +119,6 @@
 				0993E4B42236ED0C00622DA0 /* Assets.xcassets */,
 				0993E4B62236ED0C00622DA0 /* LaunchScreen.storyboard */,
 				0993E4B92236ED0C00622DA0 /* Info.plist */,
-				41B56B682236FBF700128293 /* Platformer.swift */,
 			);
 			path = TreasureBound;
 			sourceTree = "<group>";
@@ -135,6 +139,16 @@
 				0993E4CF2236ED0C00622DA0 /* Info.plist */,
 			);
 			path = TreasureBoundUITests;
+			sourceTree = "<group>";
+		};
+		41B56BF82239A05300128293 /* Platformer */ = {
+			isa = PBXGroup;
+			children = (
+				41B56BF622399F4B00128293 /* PlatformerScene.sks */,
+				41B56B682236FBF700128293 /* Platformer.swift */,
+				41B56BF422399DAA00128293 /* PlatformerScene.swift */,
+			);
+			path = Platformer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,20 +214,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = BrokeAssGames;
 				TargetAttributes = {
 					0993E4A32236ED0B00622DA0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					0993E4BD2236ED0C00622DA0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0993E4A32236ED0B00622DA0;
 					};
 					0993E4C82236ED0C00622DA0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0993E4A32236ED0B00622DA0;
 					};
@@ -246,6 +263,7 @@
 			files = (
 				0993E4B32236ED0C00622DA0 /* Main.storyboard in Resources */,
 				0993E4AA2236ED0C00622DA0 /* GameScene.sks in Resources */,
+				41B56BF722399F4B00128293 /* PlatformerScene.sks in Resources */,
 				0993E4B52236ED0C00622DA0 /* Assets.xcassets in Resources */,
 				0993E4B82236ED0C00622DA0 /* LaunchScreen.storyboard in Resources */,
 				0993E4AC2236ED0C00622DA0 /* Actions.sks in Resources */,
@@ -275,6 +293,7 @@
 			files = (
 				0993E4AE2236ED0C00622DA0 /* GameScene.swift in Sources */,
 				0993E4B02236ED0C00622DA0 /* GameViewController.swift in Sources */,
+				41B56BF522399DAA00128293 /* PlatformerScene.swift in Sources */,
 				0993E4A82236ED0C00622DA0 /* AppDelegate.swift in Sources */,
 				41B56B692236FBF700128293 /* Platformer.swift in Sources */,
 			);
@@ -340,15 +359,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -390,15 +417,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -432,7 +467,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BrokeAssGames.TreasureBound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -444,7 +481,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BrokeAssGames.TreasureBound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -457,7 +496,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BrokeAssGames.TreasureBoundTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreasureBound.app/TreasureBound";
 			};
 			name = Debug;
@@ -471,7 +511,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BrokeAssGames.TreasureBoundTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreasureBound.app/TreasureBound";
 			};
 			name = Release;
@@ -484,7 +525,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BrokeAssGames.TreasureBoundUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = TreasureBound;
 			};
 			name = Debug;
@@ -497,7 +539,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BrokeAssGames.TreasureBoundUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = TreasureBound;
 			};
 			name = Release;
