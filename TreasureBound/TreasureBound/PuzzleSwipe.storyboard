@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Puzzle View Controller-->
         <scene sceneID="7pP-Q0-Fgv">
             <objects>
-                <viewController id="7di-AY-HhW" sceneMemberID="viewController">
+                <viewController id="7di-AY-HhW" customClass="PuzzleViewController" customModule="TreasureBound" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="alB-8D-I1O"/>
                         <viewControllerLayoutGuide type="bottom" id="PD2-dF-e8d"/>
@@ -41,10 +41,17 @@
                                 <state key="normal" title="Replay">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetAction:" destination="7di-AY-HhW" eventType="touchUpInside" id="zcg-rT-QFC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="gameView" destination="gR6-UV-bp9" id="pjR-bU-UNS"/>
+                        <outlet property="timerLabel" destination="qtJ-f8-WF8" id="p4g-gp-Yws"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tbd-C2-FPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
