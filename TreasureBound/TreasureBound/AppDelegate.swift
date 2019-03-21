@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  TreasureBound
+//  SpaceGame
 //
-//  Created by PTz on 2019-03-11.
-//  Copyright © 2019 BrokeAssGames. All rights reserved.
+//  Created by Marquis Welch-Fraser on 2019-03-20.
+//  Copyright © 2019 TresureBound. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
