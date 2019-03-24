@@ -25,8 +25,35 @@ class PlatformerScene: SKScene {
         player.position = CGPoint(x: -320, y: -160)
         player.zPosition = 1
         addChild(player)
+        
+        addSwipeGestureRecognizer()
     }
     
+    func addSwipeGestureRecognizer(){
+        let gestureDirections: [UISwipeGestureRecognizer.Direction] = [.up, .down, .right, .left]
+        for gestureDirect in gestureDirections{
+            let gestureRecognizer = UISwipeGestureRecognizer (target: self, action: #selector(handleSwipe))
+            gestureRecognizer.direction = gestureDirect
+            self.view?.addGestureRecognizer(gestureRecognizer )
+        }
+    }
+    
+    @objc func handleSwipe(gesture: UIGestureRecognizer){
+        if let gesture = gesture as?  UISwipeGestureRecognizer {
+            switch gesture.direction{
+            case .up:
+                print ("Swiped Up")
+            case .down:
+                print ("Swiped Down")
+            case .left:
+                print ("Swiped Left")
+            case .right:
+                print ("Swiped Right")
+            default:
+                print ("No such gesture")
+            }
+        }
+    }
     
     func touchDown(atPoint pos : CGPoint) {
     }
@@ -41,6 +68,7 @@ class PlatformerScene: SKScene {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
