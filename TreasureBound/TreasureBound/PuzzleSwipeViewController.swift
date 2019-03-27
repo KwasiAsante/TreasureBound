@@ -66,6 +66,9 @@ class PuzzleViewController: UIViewController {
         
                 let blockFrame : CGRect = CGRect(x: 0, y: 0, width: blockWidth - 4, height: blockWidth - 4)
                 let block: MyLabel = MyLabel(frame: blockFrame)
+                
+                //Allows player touch
+                block.isUserInteractionEnabled = true
             
                 let thisCen: CGPoint = CGPoint(x: xCen, y: yCen)
                 block.center = thisCen
@@ -133,6 +136,14 @@ class PuzzleViewController: UIViewController {
     @objc func timerAction() {
         timeCount += 1
         timerLabel.text = String.init(format: "%02d", timeCount)
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let myTouch : UITouch = touches.first!
+        
+        if(blocksArr.contains(myTouch.view as Any)){
+            myTouch.view?.alpha = 0
+        }
     }
     
 }
