@@ -21,6 +21,7 @@
 		F3660DF822444AF800EB7D13 /* SpaceGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3660DF322444AF800EB7D13 /* SpaceGameScene.swift */; };
 		F3660DF922444AF800EB7D13 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = F3660DF422444AF800EB7D13 /* Starfield.sks */; };
 		F3660DFB22444AF800EB7D13 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = F3660DF622444AF800EB7D13 /* Explosion.sks */; };
+		F3FAB236224C3EB000E0FFC5 /* shuttle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FAB235224C3EAF00E0FFC5 /* shuttle@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		F3660DF322444AF800EB7D13 /* SpaceGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceGameScene.swift; sourceTree = "<group>"; };
 		F3660DF422444AF800EB7D13 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
 		F3660DF622444AF800EB7D13 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		F3FAB235224C3EAF00E0FFC5 /* shuttle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shuttle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				0993E4A72236ED0C00622DA0 /* AppDelegate.swift */,
 				0993E4A92236ED0C00622DA0 /* GameScene.sks */,
 				0993E4AB2236ED0C00622DA0 /* Actions.sks */,
+				F3FAB235224C3EAF00E0FFC5 /* shuttle@2x.png */,
 				0993E4AD2236ED0C00622DA0 /* GameScene.swift */,
 				0993E4AF2236ED0C00622DA0 /* GameViewController.swift */,
 				0993E4B12236ED0C00622DA0 /* Main.storyboard */,
@@ -241,6 +244,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -264,6 +268,7 @@
 				F3660DF922444AF800EB7D13 /* Starfield.sks in Resources */,
 				0993E4B32236ED0C00622DA0 /* Main.storyboard in Resources */,
 				0993E4AA2236ED0C00622DA0 /* GameScene.sks in Resources */,
+				F3FAB236224C3EB000E0FFC5 /* shuttle@2x.png in Resources */,
 				0993E4B52236ED0C00622DA0 /* Assets.xcassets in Resources */,
 				0993E4B82236ED0C00622DA0 /* LaunchScreen.storyboard in Resources */,
 				F3660DFB22444AF800EB7D13 /* Explosion.sks in Resources */,
@@ -452,7 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BrokeAssGames.TreasureBound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -464,7 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BrokeAssGames.TreasureBound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
