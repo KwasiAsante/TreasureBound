@@ -517,6 +517,7 @@
 				0993E4D42236ED0C00622DA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0993E4D52236ED0C00622DA0 /* Build configuration list for PBXNativeTarget "TreasureBoundTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +526,7 @@
 				0993E4D72236ED0C00622DA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0993E4D82236ED0C00622DA0 /* Build configuration list for PBXNativeTarget "TreasureBoundUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +535,7 @@
 				0993E4DA2236ED0C00622DA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

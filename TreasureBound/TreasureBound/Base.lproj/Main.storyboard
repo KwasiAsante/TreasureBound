@@ -1,26 +1,98 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="TreasureBound" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
                     </layoutGuides>
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="yuz-sR-mQT">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uvx-70-ihH">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XBv-Lm-jqT">
+                                    <size key="itemSize" width="158" height="224"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="XmL-Ka-QrN">
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c01" translatesAutoresizingMaskIntoConstraints="NO" id="ScD-26-8Qj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card-Back-5" translatesAutoresizingMaskIntoConstraints="NO" id="sYk-VB-oPe">
+                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="ScD-26-8Qj" firstAttribute="top" secondItem="XmL-Ka-QrN" secondAttribute="top" id="3r3-cd-1Qx"/>
+                                            <constraint firstItem="sYk-VB-oPe" firstAttribute="top" secondItem="XmL-Ka-QrN" secondAttribute="top" id="6AK-r3-J13"/>
+                                            <constraint firstAttribute="trailing" secondItem="ScD-26-8Qj" secondAttribute="trailing" id="Iuj-y2-pu6"/>
+                                            <constraint firstItem="ScD-26-8Qj" firstAttribute="leading" secondItem="XmL-Ka-QrN" secondAttribute="leading" id="TAT-RI-A4t"/>
+                                            <constraint firstAttribute="bottom" secondItem="ScD-26-8Qj" secondAttribute="bottom" id="adP-ea-LXr"/>
+                                            <constraint firstItem="sYk-VB-oPe" firstAttribute="leading" secondItem="XmL-Ka-QrN" secondAttribute="leading" id="mtW-cu-Our"/>
+                                            <constraint firstAttribute="bottom" secondItem="sYk-VB-oPe" secondAttribute="bottom" id="pzp-yq-imN"/>
+                                            <constraint firstAttribute="trailing" secondItem="sYk-VB-oPe" secondAttribute="trailing" id="qrx-Hh-TUo"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uvx-70-ihH" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="1F3-7B-0rH"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="Uvx-70-ihH" secondAttribute="bottom" id="1om-Na-P7y"/>
+                            <constraint firstAttribute="trailing" secondItem="Uvx-70-ihH" secondAttribute="trailing" id="AoN-5a-H7M"/>
+                            <constraint firstItem="yuz-sR-mQT" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="FTB-9t-f5U"/>
+                            <constraint firstAttribute="bottom" secondItem="yuz-sR-mQT" secondAttribute="bottom" id="HSM-Dd-v2V"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="Uvx-70-ihH" secondAttribute="bottom" id="MtC-aZ-o7m"/>
+                            <constraint firstItem="Uvx-70-ihH" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" id="Zxc-i9-2uM"/>
+                            <constraint firstAttribute="trailing" secondItem="yuz-sR-mQT" secondAttribute="trailing" id="aeo-sT-WYh"/>
+                            <constraint firstItem="Uvx-70-ihH" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" id="cuZ-vR-KIH"/>
+                            <constraint firstItem="Uvx-70-ihH" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="gAX-rh-uLv"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="Uvx-70-ihH" secondAttribute="bottom" id="lYj-52-H8k"/>
+                            <constraint firstItem="Uvx-70-ihH" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" id="nWb-JC-7cb"/>
+                            <constraint firstItem="yuz-sR-mQT" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="oB3-JH-d2g"/>
+                            <constraint firstItem="Uvx-70-ihH" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" id="oXN-1R-FN0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uvx-70-ihH" secondAttribute="trailing" id="tl4-eA-8wC"/>
+                            <constraint firstItem="Uvx-70-ihH" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="wCH-0g-k7J"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="115.59220389805098" y="117.59999999999999"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Card-Back-5" width="768" height="1063"/>
+        <image name="background" width="500" height="500"/>
+        <image name="c01" width="768" height="1063"/>
+    </resources>
 </document>
