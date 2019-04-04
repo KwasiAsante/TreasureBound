@@ -17,7 +17,11 @@
 		0993E4B82236ED0C00622DA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0993E4B62236ED0C00622DA0 /* LaunchScreen.storyboard */; };
 		0993E4C32236ED0C00622DA0 /* TreasureBoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993E4C22236ED0C00622DA0 /* TreasureBoundTests.swift */; };
 		0993E4CE2236ED0C00622DA0 /* TreasureBoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993E4CD2236ED0C00622DA0 /* TreasureBoundUITests.swift */; };
-		0E446B252239A3B500F2F3B2 /* cars in Resources */ = {isa = PBXBuildFile; fileRef = 0E446B242239A3B500F2F3B2 /* cars */; };
+		0E693D6D22566248001F4BD3 /* GameMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E693D6B22566248001F4BD3 /* GameMenu.swift */; };
+		0E693D6E22566248001F4BD3 /* GameMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0E693D6C22566248001F4BD3 /* GameMenu.sks */; };
+		0E693D712256629D001F4BD3 /* CarGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0E693D6F2256629D001F4BD3 /* CarGameScene.sks */; };
+		0E693D722256629D001F4BD3 /* CarGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E693D702256629D001F4BD3 /* CarGameScene.swift */; };
+		0E693D742256634B001F4BD3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E693D732256634B001F4BD3 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +58,11 @@
 		0993E4C92236ED0C00622DA0 /* TreasureBoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureBoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0993E4CD2236ED0C00622DA0 /* TreasureBoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureBoundUITests.swift; sourceTree = "<group>"; };
 		0993E4CF2236ED0C00622DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E446B242239A3B500F2F3B2 /* cars */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cars; sourceTree = "<group>"; };
+		0E693D6B22566248001F4BD3 /* GameMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameMenu.swift; sourceTree = "<group>"; };
+		0E693D6C22566248001F4BD3 /* GameMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameMenu.sks; sourceTree = "<group>"; };
+		0E693D6F2256629D001F4BD3 /* CarGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CarGameScene.sks; sourceTree = "<group>"; };
+		0E693D702256629D001F4BD3 /* CarGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarGameScene.swift; sourceTree = "<group>"; };
+		0E693D732256634B001F4BD3 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +148,11 @@
 		0E446B232239A37900F2F3B2 /* Cars */ = {
 			isa = PBXGroup;
 			children = (
-				0E446B242239A3B500F2F3B2 /* cars */,
+				0E693D732256634B001F4BD3 /* Helper.swift */,
+				0E693D6F2256629D001F4BD3 /* CarGameScene.sks */,
+				0E693D702256629D001F4BD3 /* CarGameScene.swift */,
+				0E693D6C22566248001F4BD3 /* GameMenu.sks */,
+				0E693D6B22566248001F4BD3 /* GameMenu.swift */,
 			);
 			path = Cars;
 			sourceTree = "<group>";
@@ -253,10 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0993E4B32236ED0C00622DA0 /* Main.storyboard in Resources */,
-				0E446B252239A3B500F2F3B2 /* cars in Resources */,
 				0993E4AA2236ED0C00622DA0 /* GameScene.sks in Resources */,
 				0993E4B52236ED0C00622DA0 /* Assets.xcassets in Resources */,
 				0993E4B82236ED0C00622DA0 /* LaunchScreen.storyboard in Resources */,
+				0E693D712256629D001F4BD3 /* CarGameScene.sks in Resources */,
+				0E693D6E22566248001F4BD3 /* GameMenu.sks in Resources */,
 				0993E4AC2236ED0C00622DA0 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E693D722256629D001F4BD3 /* CarGameScene.swift in Sources */,
+				0E693D6D22566248001F4BD3 /* GameMenu.swift in Sources */,
 				0993E4AE2236ED0C00622DA0 /* GameScene.swift in Sources */,
 				0993E4B02236ED0C00622DA0 /* GameViewController.swift in Sources */,
 				0993E4A82236ED0C00622DA0 /* AppDelegate.swift in Sources */,
+				0E693D742256634B001F4BD3 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
