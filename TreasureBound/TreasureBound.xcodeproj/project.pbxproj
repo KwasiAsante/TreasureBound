@@ -17,6 +17,9 @@
 		0993E4B82236ED0C00622DA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0993E4B62236ED0C00622DA0 /* LaunchScreen.storyboard */; };
 		0993E4C32236ED0C00622DA0 /* TreasureBoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993E4C22236ED0C00622DA0 /* TreasureBoundTests.swift */; };
 		0993E4CE2236ED0C00622DA0 /* TreasureBoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993E4CD2236ED0C00622DA0 /* TreasureBoundUITests.swift */; };
+		8299D68922564080001A0D65 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299D68822564080001A0D65 /* CardModel.swift */; };
+		8299D68B2256424B001A0D65 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299D68A2256424B001A0D65 /* Card.swift */; };
+		8299D68D22564A4A001A0D65 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299D68C22564A4A001A0D65 /* CardCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		0993E4C92236ED0C00622DA0 /* TreasureBoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureBoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0993E4CD2236ED0C00622DA0 /* TreasureBoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureBoundUITests.swift; sourceTree = "<group>"; };
 		0993E4CF2236ED0C00622DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8299D68822564080001A0D65 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		8299D68A2256424B001A0D65 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8299D68C22564A4A001A0D65 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,9 @@
 				0993E4A92236ED0C00622DA0 /* GameScene.sks */,
 				0993E4AB2236ED0C00622DA0 /* Actions.sks */,
 				0993E4AD2236ED0C00622DA0 /* GameScene.swift */,
+				8299D68822564080001A0D65 /* CardModel.swift */,
+				8299D68A2256424B001A0D65 /* Card.swift */,
+				8299D68C22564A4A001A0D65 /* CardCollectionViewCell.swift */,
 				0993E4AF2236ED0C00622DA0 /* GameViewController.swift */,
 				0993E4B12236ED0C00622DA0 /* Main.storyboard */,
 				0993E4B42236ED0C00622DA0 /* Assets.xcassets */,
@@ -271,7 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0993E4AE2236ED0C00622DA0 /* GameScene.swift in Sources */,
+				8299D68922564080001A0D65 /* CardModel.swift in Sources */,
+				8299D68B2256424B001A0D65 /* Card.swift in Sources */,
 				0993E4B02236ED0C00622DA0 /* GameViewController.swift in Sources */,
+				8299D68D22564A4A001A0D65 /* CardCollectionViewCell.swift in Sources */,
 				0993E4A82236ED0C00622DA0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

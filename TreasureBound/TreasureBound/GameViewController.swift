@@ -10,10 +10,21 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    var model = CardModel()
+    var cardArray = [Card]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Call getCards method of the card model
+        cardArray = model.getCards()
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self   
+        
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
@@ -47,6 +58,35 @@ class GameViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
+    }
+    
+    //MARK: - UICOllectionVew Protocall Methods
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return cardArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //get card cell obj
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
+        
+        //get card he collection view is trying to show
+        let card = cardArray[indexPath.row]
+        
+        //set the card for that cell
+        cell.setCard(card)
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell
+        
+        
+        
+        //flip the card
+        cell.flip()
     }
 
     override var prefersStatusBarHidden: Bool {
