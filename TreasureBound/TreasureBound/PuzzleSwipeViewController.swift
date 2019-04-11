@@ -28,6 +28,8 @@ class PuzzleViewController: UIViewController {
     var timeCount: Int = 0
     var gameTimer: Timer = Timer()
     
+    var empty: CGPoint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -66,6 +68,9 @@ class PuzzleViewController: UIViewController {
         
                 let blockFrame : CGRect = CGRect(x: 0, y: 0, width: blockWidth - 4, height: blockWidth - 4)
                 let block: MyLabel = MyLabel(frame: blockFrame)
+                
+                //Add user interaction
+                block.isUserInteractionEnabled = true
                 
                 //Allows player touch
                 block.isUserInteractionEnabled = true
@@ -117,6 +122,8 @@ class PuzzleViewController: UIViewController {
             //Remove the center from the array
             tempCentersArr.removeObject(at: randomIndex)
         }
+        
+        empty = tempCentersArr[0] as! CGPoint
     }
     
     //Restart button
@@ -143,6 +150,43 @@ class PuzzleViewController: UIViewController {
         
         if(blocksArr.contains(myTouch.view as Any)){
             myTouch.view?.alpha = 0
+        }
+    }
+    
+    
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let myTouch : UITouch = touches.first!
+        
+        if(blocksArr.contains(myTouch.view as Any)){
+            
+            let touchView: MyLabel = (myTouch.view)! as! MyLabel
+            
+            let xDif: CGFloat = touchView.center.x - empty.x
+            let yDif: CGFloat = touchView.center.y - empty.y
+            
+            let distance : CGFloat = sqrt(pow(xDif, 2) + pow(yDif, 2))
+            
+            
+            // moving the tiles
+            
+            if(distance == blockWidth){
+                let tempCen : CGPoint = touchView.center
+                
+                //movement animations
+                UIView.beginAnimations(nil, context: nil)
+                UIView.setAnimationDuration(0.2)
+                touchView.center = empty
+                UIView.commitAnimations()
+                
+                if(touchView.OrigCen == empty){
+                    touchView.backgroundColor = UIColor.blue
+                }
+                else{
+                    touchView.backgroundColor = UIColor.lightGray
+                }
+                
+                empty = tempCen
+            }
         }
     }
     
