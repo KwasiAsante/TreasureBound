@@ -9,7 +9,7 @@
 import SpriteKit
 import GameplayKit
 
-class PlatformerScene: SKScene {
+class PlatformerScene: SKScene, SKPhysicsContactDelegate{
     //Ground Variables//
     let groundBar = SKSpriteNode(imageNamed: "ground") //ground sprite
     var origGroundBarPosX: CGFloat = 0.0 //original ground position
@@ -39,8 +39,15 @@ class PlatformerScene: SKScene {
     let scoreText = SKLabelNode(fontNamed: "Chalkduster") //score text
     //Score VariableS END//
     
+    enum ColliderType:UInt32 {
+        case Player = 1
+        case Block = 2
+    }
+    
     override func didMove(to view: SKView) {
         print("We are in the new Scene") //Entering new scene test
+        
+        self.physicsWorld.contactDelegate = self
         
         self.backgroundColor = UIColor(hex: 0x80D9FF) //changing background color to blue
         
@@ -58,7 +65,11 @@ class PlatformerScene: SKScene {
         //Creating Player//
         self.playerBaseLine = self.groundBar.position.y + (self.groundBar.size.height/2) + (self.player.size.height / 2) //setting the player base line to right on top of ground
         self.player.position = CGPoint(x: self.frame.minX + self.player.size.width + (player.size.width / 4), y: playerBaseLine) //setting player position to the player base line
-        
+        self.player.physicsBody = SKPhysicsBody(circleOfRadius: CGFloat(self.player.size.width/2)) //intializing player physics body
+        self.player.physicsBody?.affectedByGravity = false //setting player to not be affected by gravity
+        self.player.physicsBody?.categoryBitMask = ColliderType.Player.rawValue //assigning player to a bit mask category based on ColliderType enum raw value
+        self.player.physicsBody?.contactTestBitMask = ColliderType.Block.rawValue //setting player to recognize contact with Collider Type block
+        self.player.physicsBody?.collisionBitMask = ColliderType.Block.rawValue
         self.addChild(player) //adding player node to the scene
         //Creating Player END//
         
@@ -66,12 +77,21 @@ class PlatformerScene: SKScene {
         self.squareBlck.position = CGPoint(x: self.frame.maxX + self.squareBlck.size.width, y: self.playerBaseLine) //setting square block position off screen
         self.squareBlck.name = "sqreB" //giving square block node a name
         blockStatus["sqreB"] = BlockStatus(isRunning: false, timeGapForNextRun: random(), currentInterval: UInt32(0)) //adding sqaure block node to the block status dictionary
-        
+        self.squareBlck.physicsBody = SKPhysicsBody(rectangleOf: self.squareBlck.size)
+        self.squareBlck.physicsBody?.isDynamic = false
+        self.squareBlck.physicsBody?.categoryBitMask = ColliderType.Block.rawValue
+        self.squareBlck.physicsBody?.contactTestBitMask = ColliderType.Player.rawValue
+        self.squareBlck.physicsBody?.collisionBitMask = ColliderType.Player.rawValue
         self.origBlockPosX = squareBlck.position.x //setting block original position
         
         self.vertBlck.position = CGPoint(x: self.frame.maxX + self.vertBlck.size.width, y: self.playerBaseLine + (self.squareBlck.size.height / 2)) //setting vertical block position off screen
         self.vertBlck.name = "vertB" //giving vertical block node a name
         blockStatus["vertB"] = BlockStatus(isRunning: false, timeGapForNextRun: random(), currentInterval: UInt32(0)) //adding vertical block node to the block satus dictionary
+        self.vertBlck.physicsBody = SKPhysicsBody(rectangleOf: self.squareBlck.size)
+        self.vertBlck.physicsBody?.isDynamic = false
+        self.vertBlck.physicsBody?.categoryBitMask = ColliderType.Block.rawValue
+        self.vertBlck.physicsBody?.contactTestBitMask = ColliderType.Player.rawValue
+        self.vertBlck.physicsBody?.collisionBitMask = ColliderType.Player.rawValue
         
         self.blockMaxX = 0 - self.squareBlck.size.width / 2
         
@@ -167,6 +187,19 @@ class PlatformerScene: SKScene {
             }
         }
 
+    }
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        died()
+    }
+    func died(){
+        if let scene = MenuScene(fileNamed: "MenuScene") {
+            let skView = self.view
+            skView?.ignoresSiblingOrder = true
+            scene.size = (skView?.bounds.size)!
+            scene.scaleMode = .aspectFill
+            skView?.presentScene(scene)
+        }
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         //Player Tap Jump///
