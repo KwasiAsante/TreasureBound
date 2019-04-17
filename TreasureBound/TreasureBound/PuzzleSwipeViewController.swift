@@ -119,6 +119,8 @@ class PuzzleViewController: UIViewController {
             
             (anyBlock as! MyLabel).center = randomCenter
             
+            (anyBlock as! MyLabel).backgroundColor = UIColor.lightGray;
+            
             //Remove the center from the array
             tempCentersArr.removeObject(at: randomIndex)
         }
@@ -146,15 +148,6 @@ class PuzzleViewController: UIViewController {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let myTouch : UITouch = touches.first!
-        
-        if(blocksArr.contains(myTouch.view as Any)){
-            myTouch.view?.alpha = 0
-        }
-    }
-    
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         let myTouch : UITouch = touches.first!
         
         if(blocksArr.contains(myTouch.view as Any)){
@@ -189,6 +182,8 @@ class PuzzleViewController: UIViewController {
             }
         }
     }
+    
+    
     
 }
 
