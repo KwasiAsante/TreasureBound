@@ -20,7 +20,6 @@
 		F3660DF722444AF800EB7D13 /* SpaceGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F3660DF222444AF800EB7D13 /* SpaceGameScene.sks */; };
 		F3660DF922444AF800EB7D13 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = F3660DF422444AF800EB7D13 /* Starfield.sks */; };
 		F3660DFB22444AF800EB7D13 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = F3660DF622444AF800EB7D13 /* Explosion.sks */; };
-		F3A9FEA7226406C3005E96FF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A9FEA4226406C3005E96FF /* GameViewController.swift */; };
 		F3A9FEA9226409A4005E96FF /* SpaceGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A9FEA8226409A4005E96FF /* SpaceGameScene.swift */; };
 		F3FAB236224C3EB000E0FFC5 /* shuttle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FAB235224C3EAF00E0FFC5 /* shuttle@2x.png */; };
 /* End PBXBuildFile section */
@@ -62,7 +61,6 @@
 		F3660DF222444AF800EB7D13 /* SpaceGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SpaceGameScene.sks; sourceTree = "<group>"; };
 		F3660DF422444AF800EB7D13 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
 		F3660DF622444AF800EB7D13 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
-		F3A9FEA4226406C3005E96FF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = ../../../Desktop/TresureBound/GameViewController.swift; sourceTree = "<group>"; };
 		F3A9FEA5226406C3005E96FF /* spaceGame.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = spaceGame.playground; path = ../../../Desktop/TresureBound/spaceGame.playground; sourceTree = "<group>"; };
 		F3A9FEA6226406C3005E96FF /* TreasureBound */ = {isa = PBXFileReference; lastKnownFileType = text; name = TreasureBound; path = ../../../Desktop/TresureBound/TreasureBound; sourceTree = "<group>"; };
 		F3A9FEA8226409A4005E96FF /* SpaceGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceGameScene.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 			children = (
 				F3660DF122444A3000EB7D13 /* SpaceGame */,
 				0993E4A72236ED0C00622DA0 /* AppDelegate.swift */,
-				F3A9FEA4226406C3005E96FF /* GameViewController.swift */,
 				F3A9FEA5226406C3005E96FF /* spaceGame.playground */,
 				F3A9FEA6226406C3005E96FF /* TreasureBound */,
 				0993E4A92236ED0C00622DA0 /* GameScene.sks */,
@@ -304,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3A9FEA7226406C3005E96FF /* GameViewController.swift in Sources */,
 				0993E4AE2236ED0C00622DA0 /* GameScene.swift in Sources */,
 				0993E4B02236ED0C00622DA0 /* GameViewController.swift in Sources */,
 				0993E4A82236ED0C00622DA0 /* AppDelegate.swift in Sources */,
