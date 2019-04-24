@@ -17,6 +17,7 @@
 		0993E4B82236ED0C00622DA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0993E4B62236ED0C00622DA0 /* LaunchScreen.storyboard */; };
 		0993E4C32236ED0C00622DA0 /* TreasureBoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993E4C22236ED0C00622DA0 /* TreasureBoundTests.swift */; };
 		0993E4CE2236ED0C00622DA0 /* TreasureBoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993E4CD2236ED0C00622DA0 /* TreasureBoundUITests.swift */; };
+<<<<<<< HEAD
 		411118872270A9400036616F /* EndlessRunnerScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4111187D2270A9400036616F /* EndlessRunnerScene.sks */; };
 		411118882270A9400036616F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4111187E2270A9400036616F /* Player.swift */; };
 		411118892270A9400036616F /* EndlessRunnerMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4111187F2270A9400036616F /* EndlessRunnerMenuScene.sks */; };
@@ -40,6 +41,10 @@
 		411118C72270B5AD0036616F /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411118C12270B5AD0036616F /* CardCollectionViewCell.swift */; };
 		411118C82270B5AD0036616F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411118C22270B5AD0036616F /* Card.swift */; };
 		411118CD2270C1000036616F /* PuzzleSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411118CB2270C1000036616F /* PuzzleSwipeViewController.swift */; };
+=======
+		0993E4DE2236FA0200622DA0 /* PuzzleSwipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0993E4DD2236FA0200622DA0 /* PuzzleSwipe.storyboard */; };
+		0993E4E02241512000622DA0 /* PuzzleSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993E4DF2241512000622DA0 /* PuzzleSwipeViewController.swift */; };
+>>>>>>> ac2591cd02fcd7d30a5e71dccc032c582a9c2070
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +81,7 @@
 		0993E4C92236ED0C00622DA0 /* TreasureBoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureBoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0993E4CD2236ED0C00622DA0 /* TreasureBoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureBoundUITests.swift; sourceTree = "<group>"; };
 		0993E4CF2236ED0C00622DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		4111187D2270A9400036616F /* EndlessRunnerScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndlessRunnerScene.sks; sourceTree = "<group>"; };
 		4111187E2270A9400036616F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		4111187F2270A9400036616F /* EndlessRunnerMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndlessRunnerMenuScene.sks; sourceTree = "<group>"; };
@@ -99,6 +105,10 @@
 		411118C12270B5AD0036616F /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		411118C22270B5AD0036616F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		411118CB2270C1000036616F /* PuzzleSwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleSwipeViewController.swift; sourceTree = "<group>"; };
+=======
+		0993E4DD2236FA0200622DA0 /* PuzzleSwipe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PuzzleSwipe.storyboard; sourceTree = "<group>"; };
+		0993E4DF2241512000622DA0 /* PuzzleSwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleSwipeViewController.swift; sourceTree = "<group>"; };
+>>>>>>> ac2591cd02fcd7d30a5e71dccc032c582a9c2070
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,8 +167,10 @@
 				0993E4A72236ED0C00622DA0 /* AppDelegate.swift */,
 				0993E4A92236ED0C00622DA0 /* GameScene.sks */,
 				0993E4AB2236ED0C00622DA0 /* Actions.sks */,
+				0993E4DD2236FA0200622DA0 /* PuzzleSwipe.storyboard */,
 				0993E4AD2236ED0C00622DA0 /* GameScene.swift */,
 				0993E4AF2236ED0C00622DA0 /* GameViewController.swift */,
+				0993E4DF2241512000622DA0 /* PuzzleSwipeViewController.swift */,
 				0993E4B12236ED0C00622DA0 /* Main.storyboard */,
 				0993E4B42236ED0C00622DA0 /* Assets.xcassets */,
 				0993E4B62236ED0C00622DA0 /* LaunchScreen.storyboard */,
@@ -360,8 +372,12 @@
 				411118872270A9400036616F /* EndlessRunnerScene.sks in Resources */,
 				411118AA2270AD4C0036616F /* Explosion.sks in Resources */,
 				0993E4B52236ED0C00622DA0 /* Assets.xcassets in Resources */,
+<<<<<<< HEAD
 				4111189D2270AAB40036616F /* CarGameScene.sks in Resources */,
 				411118A92270AD4C0036616F /* explosion.mp3 in Resources */,
+=======
+				0993E4DE2236FA0200622DA0 /* PuzzleSwipe.storyboard in Resources */,
+>>>>>>> ac2591cd02fcd7d30a5e71dccc032c582a9c2070
 				0993E4B82236ED0C00622DA0 /* LaunchScreen.storyboard in Resources */,
 				0993E4AC2236ED0C00622DA0 /* Actions.sks in Resources */,
 				411118892270A9400036616F /* EndlessRunnerMenuScene.sks in Resources */,
@@ -401,11 +417,15 @@
 				4111188D2270A9400036616F /* EndlessRunnerScene.swift in Sources */,
 				411118882270A9400036616F /* Player.swift in Sources */,
 				0993E4A82236ED0C00622DA0 /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				4111188A2270A9400036616F /* UIColorExtension.swift in Sources */,
 				411118C72270B5AD0036616F /* CardCollectionViewCell.swift in Sources */,
 				411118C42270B5AD0036616F /* TileMatcherGameViewController.swift in Sources */,
 				411118C82270B5AD0036616F /* Card.swift in Sources */,
 				411118CD2270C1000036616F /* PuzzleSwipeViewController.swift in Sources */,
+=======
+				0993E4E02241512000622DA0 /* PuzzleSwipeViewController.swift in Sources */,
+>>>>>>> ac2591cd02fcd7d30a5e71dccc032c582a9c2070
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
