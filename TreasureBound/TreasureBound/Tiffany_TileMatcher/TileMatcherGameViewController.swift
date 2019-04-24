@@ -16,7 +16,10 @@ class TileMatcherGameViewController: UIViewController, UICollectionViewDelegate,
     @IBOutlet weak var TimerLabel: UILabel!
     
     @IBOutlet weak var collectionView: UICollectionView!
+<<<<<<< HEAD
     
+=======
+>>>>>>> f7ec64db7915b2b6576844d0f017cf64c0cc66c9
     var model = CardModel()
     var cardArray = [Card]()
     
@@ -91,7 +94,11 @@ class TileMatcherGameViewController: UIViewController, UICollectionViewDelegate,
             TimerLabel.textColor = UIColor.red
             
             //Check for unmatched cards
+<<<<<<< HEAD
             //checkGameEnded()
+=======
+            checkGameEnded()
+>>>>>>> f7ec64db7915b2b6576844d0f017cf64c0cc66c9
         }
     }
     

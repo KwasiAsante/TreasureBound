@@ -6,6 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+<<<<<<< HEAD
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -128,12 +129,25 @@
             startingLineNumber = "99"
             endingLineNumber = "99"
             landmarkName = "collectionView(_:numberOfItemsInSection:)"
+=======
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TreasureBound/Kwasi_Platformer/MenuScene.swift"
+            timestampString = "577808484.789324"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "didMove(to:)"
+>>>>>>> f7ec64db7915b2b6576844d0f017cf64c0cc66c9
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+<<<<<<< HEAD
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -208,6 +222,18 @@
             startingLineNumber = "233"
             endingLineNumber = "233"
             landmarkName = "ShowAlert(_:_:)"
+=======
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TreasureBound/Marquis_SpaceGame/SpaceGame_GameScene.swift"
+            timestampString = "577809773.207191"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "didMove(to:)"
+>>>>>>> f7ec64db7915b2b6576844d0f017cf64c0cc66c9
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

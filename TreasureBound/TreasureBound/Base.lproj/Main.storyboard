@@ -1,11 +1,31 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="retina5_5" orientation="landscape">
+=======
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait">
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+>>>>>>> ac2591cd02fcd7d30a5e71dccc032c582a9c2070
+>>>>>>> f7ec64db7915b2b6576844d0f017cf64c0cc66c9
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
+<<<<<<< HEAD
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+=======
+<<<<<<< HEAD
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+=======
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+>>>>>>> ac2591cd02fcd7d30a5e71dccc032c582a9c2070
+>>>>>>> f7ec64db7915b2b6576844d0f017cf64c0cc66c9
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +38,18 @@
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
                     </layoutGuides>
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+>>>>>>> f7ec64db7915b2b6576844d0f017cf64c0cc66c9
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-54" y="25"/>
         </scene>
         <!--Tile Matcher Game View Controller-->
@@ -184,6 +209,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvd-i4-llL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="729" y="25"/>
+=======
+            <point key="canvasLocation" x="-214" y="21"/>
+        </scene>
+        <!--Puzzle Swipe View Controller-->
+        <scene sceneID="4rI-EK-ZbQ">
+            <objects>
+                <viewController id="num-FI-R8q" customClass="PuzzleSwipeViewController" customModule="TreasureBound" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rrP-8t-j1F"/>
+                        <viewControllerLayoutGuide type="bottom" id="cd2-P8-eoM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eKl-je-KRd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joN-ge-gkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1543" y="21"/>
+        </scene>
+        <!--Tile Matcher Game View Controller-->
+        <scene sceneID="tpD-eq-Zk7">
+            <objects>
+                <viewController id="wyn-R3-5DL" customClass="TileMatcherGameViewController" customModule="TreasureBound" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6AW-hM-Nm1"/>
+                        <viewControllerLayoutGuide type="bottom" id="2cf-Vk-Lv0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4L8-eS-Ldq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i31-rq-NKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="739" y="21"/>
+>>>>>>> f7ec64db7915b2b6576844d0f017cf64c0cc66c9
         </scene>
     </scenes>
     <resources>

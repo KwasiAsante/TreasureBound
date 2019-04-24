@@ -10,16 +10,10 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-class PuzzleSwipeViewController: UIViewController {
-<<<<<<< HEAD
-
-    @IBOutlet weak var gameView: UIView!
-
-=======
+class PuzzleViewController: UIViewController {
     
     @IBOutlet weak var gameView: UIView!
     
->>>>>>> f7ec64db7915b2b6576844d0f017cf64c0cc66c9
     @IBOutlet weak var timerLabel: UILabel!
     
     var gameViewWidth : CGFloat!
@@ -33,8 +27,6 @@ class PuzzleSwipeViewController: UIViewController {
     
     var timeCount: Int = 0
     var gameTimer: Timer = Timer()
-    
-    var empty: CGPoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,12 +66,6 @@ class PuzzleSwipeViewController: UIViewController {
         
                 let blockFrame : CGRect = CGRect(x: 0, y: 0, width: blockWidth - 4, height: blockWidth - 4)
                 let block: MyLabel = MyLabel(frame: blockFrame)
-                
-                //Add user interaction
-                block.isUserInteractionEnabled = true
-                
-                //Allows player touch
-                block.isUserInteractionEnabled = true
             
                 let thisCen: CGPoint = CGPoint(x: xCen, y: yCen)
                 block.center = thisCen
@@ -125,13 +111,9 @@ class PuzzleSwipeViewController: UIViewController {
             
             (anyBlock as! MyLabel).center = randomCenter
             
-            (anyBlock as! MyLabel).backgroundColor = UIColor.lightGray;
-            
             //Remove the center from the array
             tempCentersArr.removeObject(at: randomIndex)
         }
-        
-        empty = tempCentersArr[0] as! CGPoint
     }
     
     //Restart button
@@ -152,44 +134,6 @@ class PuzzleSwipeViewController: UIViewController {
         timeCount += 1
         timerLabel.text = String.init(format: "%02d", timeCount)
     }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let myTouch : UITouch = touches.first!
-        
-        if(blocksArr.contains(myTouch.view as Any)){
-            
-            let touchView: MyLabel = (myTouch.view)! as! MyLabel
-            
-            let xDif: CGFloat = touchView.center.x - empty.x
-            let yDif: CGFloat = touchView.center.y - empty.y
-            
-            let distance : CGFloat = sqrt(pow(xDif, 2) + pow(yDif, 2))
-            
-            
-            // moving the tiles
-            
-            if(distance == blockWidth){
-                let tempCen : CGPoint = touchView.center
-                
-                //movement animations
-                UIView.beginAnimations(nil, context: nil)
-                UIView.setAnimationDuration(0.2)
-                touchView.center = empty
-                UIView.commitAnimations()
-                
-                if(touchView.OrigCen == empty){
-                    touchView.backgroundColor = UIColor.blue
-                }
-                else{
-                    touchView.backgroundColor = UIColor.lightGray
-                }
-                
-                empty = tempCen
-            }
-        }
-    }
-    
-    
     
 }
 
