@@ -16,6 +16,8 @@ class PuzzleSwipeViewController: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
     
+    @IBOutlet weak var touchLabel: UILabel!
+    
     var gameViewWidth : CGFloat!
     var blockWidth : CGFloat!
     
@@ -26,6 +28,9 @@ class PuzzleSwipeViewController: UIViewController {
     var centerArr: NSMutableArray = []
     
     var timeCount: Int = 0
+    
+    var touchCounter: Int = 0
+    
     var gameTimer: Timer = Timer()
     
     var empty: CGPoint!
@@ -134,6 +139,10 @@ class PuzzleSwipeViewController: UIViewController {
         randomizeAction()
         
         timeCount = 0
+        touchCounter = 0
+        
+        touchLabel.text = "Counter: " + String(touchCounter)
+        
         gameTimer.invalidate()
         gameTimer = Timer.scheduledTimer(timeInterval: 1,
                                          target: self, selector: #selector(timerAction),
@@ -144,7 +153,7 @@ class PuzzleSwipeViewController: UIViewController {
     //Timer action
     @objc func timerAction() {
         timeCount += 1
-        timerLabel.text = String.init(format: "%02d", timeCount)
+        timerLabel.text = "Time: " + String.init(format: "%02d", timeCount)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -170,6 +179,10 @@ class PuzzleSwipeViewController: UIViewController {
                 UIView.setAnimationDuration(0.2)
                 touchView.center = empty
                 UIView.commitAnimations()
+                
+                touchCounter += 1
+                
+                touchLabel.text = "Counter: " + String(touchCounter)
                 
                 if(touchView.OrigCen == empty){
                     touchView.backgroundColor = UIColor.blue
