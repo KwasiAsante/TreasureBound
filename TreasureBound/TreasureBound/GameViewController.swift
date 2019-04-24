@@ -17,7 +17,7 @@ class GameViewController: UIViewController {
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "EndlessRunnerMenuScene") {
+            if let scene = SKScene(fileNamed: "GameScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 //scene.size = view.bounds.size
@@ -31,7 +31,36 @@ class GameViewController: UIViewController {
             view.showsNodeCount = true
         }
     }
-
+    
+    @IBAction func launchCarGame(_ sender: Any) {
+        if let scene = SKScene(fileNamed: "CarsGameMenu"){
+            let view = self.view as! SKView
+            view.ignoresSiblingOrder = true
+            scene.scaleMode = .aspectFill
+            scene.size = view.bounds.size
+            view.presentScene(scene)
+        }
+    }
+    
+    @IBAction func launchEndlessRunner(_ sender: Any) {
+        if let scene = SKScene(fileNamed: "EndlessRunnerMenuScene"){
+            let view = self.view as! SKView
+            view.ignoresSiblingOrder = true
+            scene.scaleMode = .aspectFill
+            scene.size = view.bounds.size
+            view.presentScene(scene)
+        }
+    }
+    
+    @IBAction func launchSpaceGame(_ sender: Any) {
+        if let scene = SKScene(fileNamed: "SpaceGameGameScene"){
+            let view = self.view as! SKView
+            view.ignoresSiblingOrder = true
+            scene.scaleMode = .aspectFill
+            scene.size = view.bounds.size
+            view.presentScene(scene)
+        }
+    }
     override var shouldAutorotate: Bool {
         return true
     }
