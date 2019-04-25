@@ -1,4 +1,4 @@
 # TreasureBound
 GAME 352 - Semester IOS Project
 
-Kwasi is the best and you all know it
+Peter, Tiffany, Marquis, and Guillermo is the best! and kwasi is decent.
