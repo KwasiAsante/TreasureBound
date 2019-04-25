@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="retina6_1" orientation="portrait">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="num-FI-R8q">
+    <device id="retina4_7" orientation="landscape">
+>>>>>>> f252a94ef641b2aa9212cd4746304457d192b375
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,101 +23,54 @@
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
                     </layoutGuides>
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+>>>>>>> f252a94ef641b2aa9212cd4746304457d192b375
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Games" translatesAutoresizingMaskIntoConstraints="NO" id="uFv-f2-i5Z">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95z-bz-d4D">
+                                <rect key="frame" x="164" y="52" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Treasure Bound" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mey-YU-XqZ">
-                                <rect key="frame" x="43" y="223" width="328" height="112"/>
+                                <state key="normal" title="Tile Matcher"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciZ-y2-4Fd">
+                                <rect key="frame" x="20" y="442" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="33"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxf-dQ-DEl">
-                                <rect key="frame" x="151" y="447" width="112" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="24"/>
-                                <state key="normal" title="Car Game">
-                                    <color key="titleColor" red="0.27291126939999999" green="0.14601494549999999" blue="0.12994741030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="Space Game"/>
                                 <connections>
-                                    <action selector="launchCarGame:" destination="BV1-FR-VrT" eventType="touchUpInside" id="wkX-J1-xqa"/>
+                                    <action selector="launchSpaceGame:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Cb2-bI-7Zs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9x-Cg-xxi">
+                                <rect key="frame" x="20" y="824" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Car Game"/>
+                                <connections>
+                                    <action selector="launchCarGame:" destination="BV1-FR-VrT" eventType="touchUpInside" id="7Xp-Zj-Bx5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZG-jU-enz">
+                                <rect key="frame" x="287" y="824" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Endless Runner"/>
+                                <connections>
+                                    <action selector="launchEndlessRunner:" destination="BV1-FR-VrT" eventType="touchUpInside" id="di1-SF-3ik"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kl1-J7-e87">
-                                <rect key="frame" x="108" y="499" width="199" height="55"/>
+                                <rect key="frame" x="303" y="433" width="91" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="24"/>
-                                <state key="normal" title="Puzzle Swipe">
-                                    <color key="titleColor" red="0.27291126939999999" green="0.14601494549999999" blue="0.12994741030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="launchPuzzleSwipe:" destination="BV1-FR-VrT" eventType="touchUpInside" id="mVF-SY-Ex1"/>
-                                    <segue destination="num-FI-R8q" kind="show" identifier="launchPuzzleSwipe" id="56I-Or-XfI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwW-II-IsK">
-                                <rect key="frame" x="126" y="562" width="175" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="24"/>
-                                <state key="normal" title="Endless Runner">
-                                    <color key="titleColor" red="0.27291126939999999" green="0.14601494549999999" blue="0.12994741030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="launchEndlessRunner:" destination="BV1-FR-VrT" eventType="touchUpInside" id="xie-0d-gdD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95z-bz-d4D">
-                                <rect key="frame" x="108" y="614" width="199" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="24"/>
-                                <state key="normal" title="Tile Matcher">
-                                    <color key="titleColor" red="0.28305132770000002" green="0.1470698231" blue="0.15853854749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <nil key="backgroundColor"/>
-                                </variation>
-                                <connections>
-                                    <action selector="launchTileMatcher:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ogN-pb-Noz"/>
-                                    <segue destination="wyn-R3-5DL" kind="show" identifier="launchTileMatcher" id="t9e-cu-SOt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJR-gc-qCJ">
-                                <rect key="frame" x="136" y="691" width="142" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="24"/>
-                                <state key="normal" title="Space Game">
-                                    <color key="titleColor" red="0.27291126939999999" green="0.14601494549999999" blue="0.12994741030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="launchSpaceGame:" destination="BV1-FR-VrT" eventType="touchUpInside" id="PEt-W3-Yrb"/>
-                                </connections>
+                                <state key="normal" title="Puzzle Swipe"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <connections>
-                        <outlet property="background" destination="uFv-f2-i5Z" id="gpC-F3-J3K"/>
-                        <outlet property="carGameButton" destination="zxf-dQ-DEl" id="88d-ta-rNx"/>
-                        <outlet property="matcherButton" destination="95z-bz-d4D" id="kff-ew-bfw"/>
-                        <outlet property="puzzleButton" destination="Kl1-J7-e87" id="LWH-NZ-LRX"/>
-                        <outlet property="runnerButton" destination="VwW-II-IsK" id="8BO-JZ-Mp6"/>
-                        <outlet property="spaceButton" destination="NJR-gc-qCJ" id="kHt-ot-aA7"/>
-                        <outlet property="titleName" destination="Mey-YU-XqZ" id="9aQ-Eg-HE4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-214.49275362318843" y="20.758928571428569"/>
+            <point key="canvasLocation" x="-214" y="21"/>
         </scene>
         <!--Puzzle Swipe View Controller-->
         <scene sceneID="4rI-EK-ZbQ">
@@ -123,7 +81,11 @@
                         <viewControllerLayoutGuide type="bottom" id="cd2-P8-eoM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fgf-fb-Yl6">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+>>>>>>> f252a94ef641b2aa9212cd4746304457d192b375
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k63-ig-t5K">
@@ -140,7 +102,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNb-FD-lMg">
-                                <rect key="frame" x="20" y="523" width="374" height="40"/>
+                                <rect key="frame" x="20" y="528" width="374" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Replay">
@@ -150,8 +112,8 @@
                                     <action selector="resetAction:" destination="num-FI-R8q" eventType="touchUpInside" id="5Xp-hQ-KA7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="counterLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxr-zX-Jl7">
-                                <rect key="frame" x="20" y="475" width="374" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="touchCounter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENC-gq-Ug9">
+                                <rect key="frame" x="20" y="480" width="374" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -164,12 +126,12 @@
                     <connections>
                         <outlet property="gameView" destination="k63-ig-t5K" id="td6-WV-34y"/>
                         <outlet property="timerLabel" destination="iFx-w7-vta" id="Gll-ZJ-sEN"/>
-                        <outlet property="touchLabel" destination="jxr-zX-Jl7" id="FIC-f3-CVX"/>
+                        <outlet property="touchLabel" destination="ENC-gq-Ug9" id="GRv-hS-D3U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joN-ge-gkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="-370"/>
+            <point key="canvasLocation" x="1541.5999999999999" y="20.239880059970016"/>
         </scene>
         <!--Tile Matcher Game View Controller-->
         <scene sceneID="tpD-eq-Zk7">
@@ -180,17 +142,29 @@
                         <viewControllerLayoutGuide type="bottom" id="2cf-Vk-Lv0"/>
                     </layoutGuides>
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gV7-Ru-0Dg" customClass="SKView">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="VPo-C7-faa">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="862"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="VPo-C7-faa">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+>>>>>>> f252a94ef641b2aa9212cd4746304457d192b375
                                 <constraints>
                                     <constraint firstAttribute="width" constant="667" id="aP1-UP-Oca"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9C1-nM-eDb">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="862"/>
+=======
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+>>>>>>> f252a94ef641b2aa9212cd4746304457d192b375
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining: 10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znt-yc-uaU">
                                         <rect key="frame" x="238.5" y="0.0" width="190" height="30"/>
@@ -203,7 +177,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zcb-CI-Gc8">
+<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="30" width="667" height="832"/>
+=======
+                                        <rect key="frame" x="0.0" y="30" width="667" height="345"/>
+>>>>>>> f252a94ef641b2aa9212cd4746304457d192b375
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lbs-eU-hET">
                                             <size key="itemSize" width="158" height="224"/>
@@ -280,12 +258,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i31-rq-NKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="297"/>
+            <point key="canvasLocation" x="431" y="-1084"/>
         </scene>
     </scenes>
     <resources>
         <image name="Card-Back-5" width="768" height="1063"/>
-        <image name="Games" width="1280" height="768"/>
         <image name="background" width="500" height="500"/>
         <image name="card1" width="768" height="1063"/>
     </resources>

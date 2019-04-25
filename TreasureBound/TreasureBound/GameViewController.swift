@@ -12,6 +12,16 @@ import GameplayKit
 
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var background: UIImageView!
+    
+    @IBOutlet weak var titleName: UITextField!
+    
+    @IBOutlet weak var carGameButton: UIButton!
+    @IBOutlet weak var puzzleButton: UIButton!
+    @IBOutlet weak var runnerButton: UIButton!
+    @IBOutlet weak var matcherButton: UIButton!
+    @IBOutlet weak var spaceButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,35 +42,6 @@ class GameViewController: UIViewController {
         }
     }
     
-    @IBAction func launchCarGame(_ sender: Any) {
-        if let scene = SKScene(fileNamed: "CarsGameMenu"){
-            let view = self.view as! SKView
-            view.ignoresSiblingOrder = true
-            scene.scaleMode = .aspectFill
-            scene.size = view.bounds.size
-            view.presentScene(scene)
-        }
-    }
-    
-    @IBAction func launchEndlessRunner(_ sender: Any) {
-        if let scene = SKScene(fileNamed: "EndlessRunnerMenuScene"){
-            let view = self.view as! SKView
-            view.ignoresSiblingOrder = true
-            scene.scaleMode = .aspectFill
-            scene.size = view.bounds.size
-            view.presentScene(scene)
-        }
-    }
-    
-    @IBAction func launchSpaceGame(_ sender: Any) {
-        if let scene = SKScene(fileNamed: "SpaceGameGameScene"){
-            let view = self.view as! SKView
-            view.ignoresSiblingOrder = true
-            scene.scaleMode = .aspectFill
-            scene.size = view.bounds.size
-            view.presentScene(scene)
-        }
-    }
     override var shouldAutorotate: Bool {
         return true
     }
@@ -72,7 +53,65 @@ class GameViewController: UIViewController {
             return .all
         }
     }
-
+    
+    @IBAction func launchPuzzleSwipe(_ sender: Any) {
+        performSegue(withIdentifier: "launchPuzzleSwipe", sender: self)
+    }
+    
+    @IBAction func launchCarGame(_ sender: Any) {
+        if let scene = SKScene(fileNamed: "CarsGameMenu"){
+            let view = self.view as! SKView
+            view.ignoresSiblingOrder = true
+            scene.scaleMode = .resizeFill
+            scene.size = view.bounds.size
+            background.isHidden = true;
+            titleName.isHidden = true;
+            carGameButton.isHidden = true;
+            puzzleButton.isHidden = true;
+            runnerButton.isHidden = true;
+            matcherButton.isHidden = true;
+            spaceButton.isHidden = true;
+            view.presentScene(scene)
+        }
+    }
+    
+    @IBAction func launchEndlessRunner(_ sender: Any) {
+        if let scene = SKScene(fileNamed: "EndlessRunnerMenuScene"){
+            let view = self.view as! SKView
+            view.ignoresSiblingOrder = true
+            scene.scaleMode = .aspectFill
+            scene.size = view.bounds.size
+            background.isHidden = true;
+            titleName.isHidden = true;
+            carGameButton.isHidden = true;
+            puzzleButton.isHidden = true;
+            runnerButton.isHidden = true;
+            matcherButton.isHidden = true;
+            spaceButton.isHidden = true;
+            view.presentScene(scene)
+        }
+    }
+    
+    @IBAction func launchTileMatcher(_ sender: Any) {
+        performSegue(withIdentifier: "launchTileMatcher", sender: self)
+    }
+    
+    @IBAction func launchSpaceGame(_ sender: Any) {
+        if let scene = SKScene(fileNamed: "SpaceGameGameScene"){
+            let view = self.view as! SKView
+            view.ignoresSiblingOrder = true
+            scene.scaleMode = .aspectFill
+            scene.size = view.bounds.size
+            background.isHidden = true;
+            titleName.isHidden = true;
+            carGameButton.isHidden = true;
+            puzzleButton.isHidden = true;
+            runnerButton.isHidden = true;
+            matcherButton.isHidden = true;
+            spaceButton.isHidden = true;
+            view.presentScene(scene)
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.

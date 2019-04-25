@@ -34,8 +34,8 @@ class CarsGameMenu: SKScene{
                 gameScene.scaleMode = .aspectFill
                 view?.presentScene(gameScene, transition: SKTransition.doorsCloseHorizontal(withDuration:TimeInterval(2)))
             }
-            }
         }
     }
+}
     
 
